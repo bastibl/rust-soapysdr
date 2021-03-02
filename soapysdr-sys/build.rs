@@ -12,6 +12,7 @@ fn main() {
     };
 
     let mut bindgen_builder = bindgen::Builder::default()
+        .size_t_is_usize(true)
         .trust_clang_mangling(false)
         .header("wrapper.h");
 
